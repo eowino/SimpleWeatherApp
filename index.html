@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weather App</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+	<link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Weather App</h1>
+		<ul class="weather-icons list-unstyled list-inline">
+			<li><i class="wi wi-day-cloudy-high"></i></li>
+			<li><i class="wi wi-sprinkle"></i></li>
+			<li><i class="wi wi-cloudy"></i></li>
+			<li><i id="test" class="wi wi-day-sunny"></i></li>
+		</ul>
+		<div class="search-area">
+			<div class="form-group">
+				<label for="search" class="sr-only">Search</label>
+				<input type="search" class="form-control" id="search" placeholder="e.g. london, gb" autocomplete="on">
+				<div class="alert alert-warning alert-dismissible" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+					Please insert a value before searching
+				</div>
+			</div>
+			<button type="submit" id="searchBtn" class="btn btn-info">Search</button>
+		</div>
+		<div class="weather-area">
+			<ul class="list-unstyled">
+				<li><span id="area">{{area}}</span></li>
+				<li><span id="temperature">{{temperature}} &deg;</span><span id="description">{{description}}</span><span id="icon"></span></li>
+				<li>
+					<div class="btn-group metric-toggle" data-toggle="buttons">
+						<label for="toCelsius" class="btn btn-primary active"><input type="radio" id="toCelsius" name="temp" checked><span>&#8451;</span></label>
+						<label for="toFahrenheit" class="btn btn-primary"><input type="radio" id="toFahrenheit" name="temp"><span>&#8457;</span></label>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<footer>
+			<ul class="list-unstyled">
+				<li><a href="http://codepen.io/evonzz/#">By Evans</a></li>
+				<li id="weather-icon-author"><a href="https://erikflowers.github.io/weather-icons/">Icons by Erik Flowers</a></li>
+			</ul>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
+
+
+
