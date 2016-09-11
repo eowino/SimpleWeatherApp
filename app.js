@@ -8,8 +8,8 @@ var weatherDescription = "";
 var weatherIcon = "";
 var temperatureCel= "NaN";
 var temperatureFar= "NaN";
-var locationURL = "http://apidev.accuweather.com/locations/v1/search?q=";
-var weatherURL = "http://apidev.accuweather.com/currentconditions/v1/";
+var locationURL = "https://apidev.accuweather.com/locations/v1/search?q=";
+var weatherURL = "https://apidev.accuweather.com/currentconditions/v1/";
 var weatherURLTail = ".json?language=en&apikey=hoArfRosT1215";
 var weatherIcons = {
 	"Sunny":"wi-day-sunny",
